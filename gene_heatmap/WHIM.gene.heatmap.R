@@ -306,7 +306,7 @@ data = merge(data, phospho, by=c("sample", "gene"), all=FALSE)  # we want only t
 data = get.data(data)
 ph = plot.heatmap(data$data.numeric, data$data.subtype, T)
 ph
-fn = paste(pd, genes,"24_PDX_omics.pdf", sep="_")
+fn = paste(genes,"24_PDX_omics.pdf", sep="_")
 ggsave(file=fn, width=6, useDingbats=FALSE)
 # con = file(out.fn, open="wt")
 # timestamp = paste0("# Created ", Sys.time())
